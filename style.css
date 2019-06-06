@@ -4,8 +4,9 @@
     background-color: black;
 }
 
-.boiteEnemis {
-    width: 20px;
-    height: 20px;
-    background-color: antiquewhite;
+.alien {
+    width: 30px;
+    height: 30px;
+    background-image: url('/home/bobby/code/space_invaders2/alien.png');
+    background-repeat: no-repeat;
 }
