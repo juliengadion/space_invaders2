@@ -1,19 +1,22 @@
-const screen_width = document.getElementById('screen');
-const screen_height = document.getElementById('screen');
+var Int = setInterval('moveAliens()', 1000);
 
-var alien = document.getElementById('alien');
-var alienLeft = document.getElementById('alien');
-var alienUp = document.getElementById('alien');
-
-setInterval(moveAliens(), 500);
+var screen = ('screen');
+var alien = ('alien');
+var posXalien = alien.height();
+var posYalien = alien.width();
+var posXscreen = screen.innerHeight();
+var posYscreen = screen.innerWidth();
 
 function moveAliens() {
 
-    if (alienLeft < screen_width)
-        alienLeft++;
+    if (posXalien < posXscreen) {
+        posXalien = posXalien+1;
+    }
 
     else {
-        alienLeft--;
+        posXalien = posXalien-1;
     }
 
 };
+
+clearInterval(Int);
