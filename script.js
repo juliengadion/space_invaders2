@@ -1,19 +1,19 @@
-var BoiteEnnemis = document.getElementsByClassName('boiteEnnemis')
-var direction = 1;
-var posXennemis = 0;
-var posYennemis = 0;
+const screen_width = document.getElementById('screen');
+const screen_height = document.getElementById('screen');
 
-function interval() {
-    intervalID = setInterval(moveAliens, 500);
-}
+var alien = document.getElementById('alien');
+var alienLeft = document.getElementById('alien');
+var alienUp = document.getElementById('alien');
+
+setInterval(moveAliens(), 500);
 
 function moveAliens() {
 
-    if (posXennemis == 500) {
-        clearInterval()
-    }
-    else {
-        posXennemis++;
-    };
-}
+    if (alienLeft < screen_width)
+        alienLeft++;
 
+    else {
+        alienLeft--;
+    }
+
+};
