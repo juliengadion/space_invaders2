@@ -10,34 +10,13 @@
     <title>Space invaders</title>
 
 </head>
-<body>
-
-    <header>
-
-        <h1>SPACE INVADERS</h1>
-
-
-    </header>
-
-    <main>
-
-        <div id="screen">
-            
-            <div id="alien">
-
-            </div>
-            
-        </div>
-
-        <button onclick="moveAliens()">PLAY</button> 
-
-    </main>
-
-    <footer>
-
-
-    </footer>
+<body onload="redim()" onkeydown="spaceshipMoves(event.keyCode)">
     
+    
+    <img src="/home/bobby/code/exo_js/exo_3/alien.png" id="box">
+    <img src="space.jpg" id="space" style = "position: absolute; left:500px; top:200px; width:750px; height:450px;"/>
+    <img src="spaceship.png" id="spaceship" style = "position: absolute; left:770px; top:560px; height:100px;"/>
+
 
     <script src="script.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script> 
