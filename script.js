@@ -1,3 +1,5 @@
+// player ship
+
 var largeur = screen.availWidth
 var hauteur = screen.availHeight
 var vaisseau = (largeur/2)-110
@@ -44,3 +46,8 @@ function bouge(x,y)
 
     }
 }
+
+// ennemy
+
+
+
